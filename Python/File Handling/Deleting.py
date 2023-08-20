@@ -1,14 +1,17 @@
-# Deleting a file:
-# first import os module
-# run os.remove()
-# if file doesnt exist, it will throw error
-'''
+# Deleting a File:
+# first need to import os module
+# run os.remove() function.
+"""
 import os
-os.remove("Adi.txt")
-'''
-# to avoid getting error, check whether file exists or not
+os.remove("Ravi.txt")
+"""
 
-#To delete folder
+# To avoid getting error, check whether file exists before deleting it.
 
-# impport os module
-# 
+import os
+
+if os.path.exists("Ravi.txt"):
+    os.remove("Ravi.txt")
+    print("file deleted")
+else:
+    print("File doesnot Exists")
